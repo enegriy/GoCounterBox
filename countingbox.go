@@ -52,7 +52,7 @@ func main() {
 				box[i][left] == box[up][j] &&
 				box[i][left] == box[i][j] &&
 				areas[i][left] != areas[up][j] {
-				changeAreas(areas[i][left], areas[up][j], j, i, areas)
+				changeareas(areas[i][left], areas[up][j], j, i, areas)
 			}
 		}
 	}
@@ -63,7 +63,7 @@ func main() {
 	fmt.Println(findmax(box, areas))
 }
 
-func changeAreas(oldAreaId int, newAreaId int, colEnd int, rowEnd int, areas [][]int) {
+func changeareas(oldAreaId int, newAreaId int, colEnd int, rowEnd int, areas [][]int) {
 	for i := 0; i <= rowEnd; i++ {
 		for j := 0; j <= colEnd; j++ {
 			if areas[i][j] == oldAreaId {
