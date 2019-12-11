@@ -7,3 +7,8 @@
 
 ![Picture](https://media.proglib.io/wp-uploads/2019/06/bfHFxc9XC9hALpkzPjx0ReJezLbhsOwKj5u9.jpg)
 
+```
+if (isAwesome){
+  return true
+}
+```
